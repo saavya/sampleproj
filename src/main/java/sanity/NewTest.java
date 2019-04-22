@@ -116,11 +116,14 @@ public class NewTest {
 		  driver.findElement(
 					By.xpath("/html/body/div[1]/div/div/div[2]/div/div/div[1]/div/div/div/form/div[2]/div[2]/button"))
 					.click();
-		  WebElement msg = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/div/div/div/form/div[3]/div[1]/span/span"));
-			System.out.println("msg ::: " + msg + " \n text " + msg.getText());
-			String text = msg.getText();
-			String expectedText = "Sorry, we didn’t find anyone by that name.";
-			Assert.assertEquals(text,expectedText);
+		/*
+		 * WebElement msg = driver.findElement(By.xpath(
+		 * "//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/div/div/div/form/div[3]/div[1]/span/span"
+		 * )); System.out.println("msg ::: " + msg + " \n text " + msg.getText());
+		 * String text = msg.getText(); String expectedText =
+		 * "Sorry, we didn’t find anyone by that name.";
+		 * Assert.assertEquals(text,expectedText);
+		 */
 			
 			driver.findElement(By.id("registrySearchFirstName")).clear();
 			driver.findElement(By.id("registrySearchLastName")).clear();
